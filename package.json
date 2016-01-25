@@ -13,10 +13,17 @@
     "build": "npm run test && npm run lint && npm run lib && npm run bundle"
   },
   "author": "Mathieu ANCELIN",
+  "homepage": "https://github.com/mathieuancelin/react-state-validator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mathieuancelin/react-state-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mathieuancelin/react-state-validator"
+  },
   "license": "MIT",
   "keywords": [
     "react",
-    "context",
     "utils",
     "validator",
     "state validator",
