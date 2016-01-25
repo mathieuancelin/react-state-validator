@@ -2,7 +2,7 @@
 
 [![build status][1]][2]
 
-A simple API to validate your React components state has it evolves
+A simple API to validate your React components state as it changes in time
 
 ```
 npm install react-state-validator

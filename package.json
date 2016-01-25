@@ -1,9 +1,9 @@
 {
   "name": "react-state-validator",
   "version": "1.0.0",
-  "description": "Simple API to validate your React components state has it evolves",
+  "description": "A simple API to validate your React components state as it changes in time",
   "main": "lib/index.js",
-  "jsnext:main": "lib/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
     "lint": "eslint src tests",
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register tests/index.js",
