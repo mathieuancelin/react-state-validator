@@ -44,6 +44,5 @@
     "webpack": "^1.12.12"
   },
   "dependencies": {
-    "invariant": "^2.2.0"
   }
 }
