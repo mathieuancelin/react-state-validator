@@ -1,6 +1,6 @@
 {
   "name": "react-state-validator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple API to validate your React components state as it changes in time",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
