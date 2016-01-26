@@ -1,20 +1,25 @@
 export function validate(state, shape, name) {
   const errors = [];
+  function handleError(err, key) {
+    const e = err;
+    e.message = e.message
+      .replace('Invalid prop', 'Invalid state')
+      .replace('Required prop', 'Required state')
+      .replace('prop', 'state');
+    e.errorInfos = {
+      key,
+      name,
+      message: e.message,
+    };
+    errors.push(e);
+  }
   for (const key in shape) {
     if (shape.hasOwnProperty(key)) {
       try {
         const ret = shape[key](state, key, name, 'prop', key);
-        if (ret) {
-          ret.message = ret.message.replace('Invalid prop', 'Invalid state');
-          ret.errorInfos = {
-            key,
-            name,
-            message: ret.message,
-          };
-          errors.push(ret);
-        }
+        if (ret) handleError(ret, key);
       } catch (e) {
-        errors.push(e);
+        handleError(e, key);
       }
     }
   }

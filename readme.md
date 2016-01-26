@@ -24,6 +24,8 @@ With `react-state-validator` you can reuse the React validation API for props to
 
 As the validation is only performed in dev mode (for performance reason), in dev mode you should define a `process.env.NODE_ENV` variable with a value that is not `production` (ie. `test`, or `dev`). In production mode, set the same variable to `production`.
 
+Also you have to be aware that `react-state-validator` can have serious impact on performances if you change your state a lot and if your state is big with a lot of validation. You should use it with caution and only for development.
+
 ```javascript
 import React from 'react';
 import { enhanceWithValidState } from 'react-state-validator';
