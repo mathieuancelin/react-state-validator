@@ -26,6 +26,7 @@ function broadcast(name, errors) {
   listeners.forEach(l => l(name, errors));
 }
 
+// for testing purposes only
 export function __subscribeToErrors(listener) {
   listeners.push(listener);
   return () => {
