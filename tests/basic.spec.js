@@ -1,4 +1,4 @@
-/* eslint no-unused-vars:0, no-undef:0, no-unused-expressions:0, react/no-multi-comp: 0 */
+/* eslint no-unused-vars:0, consistent-return: 0, no-undef:0, no-unused-expressions:0, react/no-multi-comp: 0 */
 
 import React from 'react';
 import chai, { expect } from 'chai';
