@@ -11,7 +11,7 @@ npm install react-state-validator
 or
 
 ```html
-<script src="https://npmcdn.com/react-state-validator/dist/react-state-validator.js"></script>
+<script src="https://unpkg.com/react-state-validator/dist/react-state-validator.js"></script>
 ```
 
 ## Validate your state
